@@ -1,0 +1,17 @@
+classes:
+  - common
+parameters:
+  kapitan:
+    compile:
+      - output_path: ../
+        input_type: jinja2
+        input_paths:
+          - tf_code
+  target_name: s3
+  tfvars:
+    provider:
+      terraform_version: "1.5.7"
+      aws: "5.0"
+      random: "3.4.3"
+    bucket_name: sprint-task-4
+    region: us-west-2     
